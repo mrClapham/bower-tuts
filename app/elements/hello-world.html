@@ -7,12 +7,24 @@
                 color: rgba(0,0,0,.2);
             }
         </style>
-
         <h1>Hello {{name}}</h1>
+        <input type="text" value ={{name}}>
+        <button on-click="{{changeName}}">ClickMe</button>
+        <ul>
+            <template repeat="{{name in names}}">
+                <li>{{name.name}}</li>
+            </template>
+        </ul>
     </template>
 <script>
     Polymer({
-        name:"World"
+        name:"World",
+        ready:function(){
+            this.names=[{name:"Johhny"}, {name:"Joey"}, {name:"Dee Dee"}]
+        },
+        changeName:function(){
+            this.name="Hello you"
+        }
     })
 </script>
 
