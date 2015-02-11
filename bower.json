@@ -1,0 +1,22 @@
+{
+  "name": "polymer-tuts",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mrClapham/bower-tuts",
+  "authors": [
+    "Graham Clapham <graham.clapham@thomsonreuters.com>"
+  ],
+  "description": "Polymer test",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.4"
+  }
+}
